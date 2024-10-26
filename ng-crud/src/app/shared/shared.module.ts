@@ -1,14 +1,21 @@
-import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ErrorDialogComponent } from './components/error-dialog/error-dialog.component';
-import { MatDialogModule } from '@angular/material/dialog';
+import { NgModule } from '@angular/core';
+import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
+import { MatDialogModule } from '@angular/material/dialog';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatIconModule } from '@angular/material/icon';
+import { MatInputModule } from '@angular/material/input';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+import { MatSelectModule } from '@angular/material/select';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatTableModule } from '@angular/material/table';
 import { MatToolbarModule } from '@angular/material/toolbar';
 
-import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
-import { MatIconModule } from '@angular/material/icon';
+import { ErrorDialogComponent } from './components/error-dialog/error-dialog.component';
 import { CategoryPipe } from './pipes/category.pipe';
+
+
 
 @NgModule({
   declarations: [ErrorDialogComponent, CategoryPipe],
@@ -21,7 +28,13 @@ import { CategoryPipe } from './pipes/category.pipe';
     MatProgressSpinnerModule,
     MatDialogModule,
     MatIconModule,
-    CategoryPipe
+    CategoryPipe,
+    MatFormFieldModule,
+    MatInputModule,
+    MatCardModule,
+    MatButtonModule,
+    MatSelectModule,
+    MatSnackBarModule
   ],
 })
 export class SharedModule {}
